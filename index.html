@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Politique de confidentialité du Service Klyn — Assistant de vente Vinted.">
+  <meta name="description" content="Documents légaux du Service Klyn — Politique de confidentialité, Mentions légales, CGV et CGU.">
   <meta name="robots" content="index, follow">
-  <title>Politique de confidentialité — Klyn</title>
+  <title>Documents légaux — Klyn</title>
   <style>
     :root {
       --bg: #0A1A3A;
       --bg-card: #0F2147;
+      --bg-elevated: #142A55;
       --accent: #C9A961;
+      --accent-soft: rgba(201, 169, 97, 0.1);
       --text: #E0E0E0;
       --text-muted: #999;
       --border: #2A3A5A;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
     body {
       margin: 0;
       padding: 0;
@@ -24,39 +27,75 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
       line-height: 1.6;
     }
+    .nav-sticky {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 26, 58, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .nav-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .nav-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s;
+      border: 1px solid transparent;
+    }
+    .nav-link:hover {
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-color: var(--accent);
+    }
     .container {
       max-width: 820px;
       margin: 0 auto;
-      padding: 60px 24px;
+      padding: 40px 24px 80px;
     }
-    .card {
+    .doc-section {
       background: var(--bg-card);
       border-radius: 16px;
       padding: 48px;
+      margin-bottom: 32px;
       box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      scroll-margin-top: 80px;
     }
-    .header {
+    .doc-header {
       text-align: center;
       padding-bottom: 32px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 40px;
     }
-    .logo {
+    .doc-header .logo {
       font-size: 48px;
       color: var(--accent);
       font-weight: bold;
       letter-spacing: 4px;
       margin-bottom: 16px;
     }
-    .header h1 {
+    .doc-header h1 {
       color: #FFFFFF;
-      font-size: 32px;
+      font-size: 30px;
       margin: 0 0 12px 0;
       font-weight: 700;
     }
-    .header .subtitle {
+    .doc-header .subtitle {
       color: var(--accent);
-      font-size: 15px;
+      font-size: 14px;
       margin: 0;
     }
     .meta {
@@ -93,12 +132,8 @@
       transition: border-color 0.2s;
     }
     a:hover { border-bottom-color: var(--accent); }
-    ul, ol {
-      padding-left: 24px;
-    }
-    li {
-      margin: 8px 0;
-    }
+    ul, ol { padding-left: 24px; }
+    li { margin: 8px 0; }
     strong { color: #FFFFFF; }
     code {
       background: var(--bg);
@@ -123,27 +158,18 @@
       border-bottom: 1px solid var(--border);
     }
     th {
-      background: rgba(201, 169, 97, 0.1);
+      background: var(--accent-soft);
       color: var(--accent);
       font-weight: 600;
     }
     tr:last-child td { border-bottom: none; }
     .highlight {
-      background: rgba(201, 169, 97, 0.08);
+      background: var(--accent-soft);
       border-left: 3px solid var(--accent);
       padding: 16px 20px;
       margin: 20px 0;
       border-radius: 4px;
     }
-    .footer {
-      margin-top: 60px;
-      padding-top: 32px;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 13px;
-    }
-    .footer p { margin: 8px 0; }
     .contact-box {
       background: var(--bg);
       border: 2px solid var(--accent);
@@ -152,25 +178,88 @@
       margin: 20px 0;
       text-align: center;
     }
-    .contact-box strong { color: var(--accent); display: block; margin-bottom: 8px; }
+    .contact-box strong {
+      color: var(--accent);
+      display: block;
+      margin-bottom: 8px;
+    }
+    .warning-box {
+      background: rgba(201, 90, 90, 0.08);
+      border-left: 3px solid #C95A5A;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .warning-box strong { color: #E07070; }
+    .global-footer {
+      text-align: center;
+      padding: 40px 24px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid var(--border);
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 24px 40px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .hero .logo-big {
+      font-size: 72px;
+      color: var(--accent);
+      font-weight: bold;
+      letter-spacing: 8px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      color: #FFFFFF;
+      font-size: 36px;
+      margin: 0 0 12px 0;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin: 0;
+    }
     @media (max-width: 600px) {
-      .container { padding: 24px 16px; }
-      .card { padding: 28px 20px; }
-      .header h1 { font-size: 24px; }
+      .container { padding: 24px 12px 60px; }
+      .doc-section { padding: 28px 20px; border-radius: 12px; }
+      .doc-header h1 { font-size: 22px; }
+      .hero { padding: 40px 16px 20px; }
+      .hero .logo-big { font-size: 56px; }
+      .hero h1 { font-size: 26px; }
       h2 { font-size: 19px; }
-      table { font-size: 13px; }
+      table { font-size: 12px; }
       th, td { padding: 8px 10px; }
+      .nav-link { font-size: 12px; padding: 6px 10px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
 
-      <header class="header">
+  <nav class="nav-sticky">
+    <div class="nav-inner">
+      <a href="#confidentialite" class="nav-link">Confidentialité</a>
+      <a href="#mentions" class="nav-link">Mentions légales</a>
+      <a href="#cgv" class="nav-link">CGV</a>
+      <a href="#cgu" class="nav-link">CGU</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="logo-big">K</div>
+    <h1>Documents légaux</h1>
+    <p>Klyn — Assistant de vente Vinted</p>
+  </div>
+
+  <div class="container">
+
+    <!-- ============ POLITIQUE DE CONFIDENTIALITÉ ============ -->
+    <section id="confidentialite" class="doc-section">
+      <header class="doc-header">
         <div class="logo">K</div>
         <h1>Politique de confidentialité</h1>
-        <p class="subtitle">Klyn — Assistant de vente Vinted</p>
+        <p class="subtitle">RGPD & Protection des données</p>
       </header>
 
       <div class="meta">
@@ -195,13 +284,13 @@
           <tr><th>Catégorie</th><th>Données concernées</th><th>Origine</th></tr>
         </thead>
         <tbody>
-          <tr><td>Identification Telegram</td><td>Identifiant numérique de compte Telegram (chat_id), nom d'utilisateur, prénom public</td><td>Transmis par Telegram lors de l'envoi d'un message au bot</td></tr>
-          <tr><td>Données de compte</td><td>Adresse email, code d'activation, forfait souscrit, quotas et crédits restants</td><td>Fournies par l'utilisateur lors de la souscription</td></tr>
-          <tr><td>Contenu envoyé</td><td>Photos d'articles Vinted et textes transmis au bot pour traitement</td><td>Envoyés par l'utilisateur dans la conversation Telegram</td></tr>
-          <tr><td>Données de paiement</td><td>Identifiants techniques Stripe (customer_id, subscription_id), empreinte de carte (4 derniers chiffres)</td><td>Transmis par Stripe — aucun numéro complet de carte n'est stocké côté Klyn</td></tr>
-          <tr><td>Données de facturation</td><td>Nom, adresse de facturation, montants facturés</td><td>Fournies par l'utilisateur lors du paiement</td></tr>
+          <tr><td>Identification Telegram</td><td>Identifiant numérique de compte Telegram (chat_id), nom d'utilisateur, prénom public</td><td>Transmis par Telegram</td></tr>
+          <tr><td>Données de compte</td><td>Adresse email, code d'activation, forfait souscrit, quotas et crédits restants</td><td>Fournies par l'utilisateur</td></tr>
+          <tr><td>Contenu envoyé</td><td>Photos d'articles Vinted et textes transmis au bot pour traitement</td><td>Envoyés par l'utilisateur</td></tr>
+          <tr><td>Données de paiement</td><td>Identifiants techniques Stripe, empreinte de carte (4 derniers chiffres)</td><td>Transmis par Stripe</td></tr>
+          <tr><td>Données de facturation</td><td>Nom, adresse de facturation, montants facturés</td><td>Fournies par l'utilisateur</td></tr>
           <tr><td>Données professionnelles</td><td>Numéro SIRET (forfaits Entreprise uniquement)</td><td>Fourni par l'utilisateur professionnel</td></tr>
-          <tr><td>Données techniques</td><td>Logs d'utilisation, horodatage des requêtes</td><td>Générées automatiquement par le Service</td></tr>
+          <tr><td>Données techniques</td><td>Logs d'utilisation, horodatage des requêtes</td><td>Générées automatiquement</td></tr>
         </tbody>
       </table>
       <div class="highlight">
@@ -209,29 +298,28 @@
       </div>
 
       <h2><span class="num">03.</span>Finalités et bases légales</h2>
-      <p>Conformément à l'article 6 du RGPD, les traitements sont effectués sur les bases légales suivantes :</p>
+      <p>Conformément à l'article 6 du RGPD :</p>
       <table>
         <thead>
           <tr><th>Finalité</th><th>Base légale</th></tr>
         </thead>
         <tbody>
           <tr><td>Fourniture du Service (génération de fiches, gestion des crédits, traitement par IA)</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
-          <tr><td>Gestion du compte et de l'abonnement (activation, facturation, support client)</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
-          <tr><td>Envoi des emails transactionnels (activation, annulation, factures)</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
-          <tr><td>Lutte contre la fraude (empreinte de carte, détection des codes usurpés)</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
-          <tr><td>Respect des obligations légales (comptabilité, vérification SIRET)</td><td>Obligation légale (art. 6.1.c)</td></tr>
-          <tr><td>Amélioration du Service (analyse anonymisée d'utilisation)</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
+          <tr><td>Gestion du compte et de l'abonnement</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+          <tr><td>Envoi des emails transactionnels</td><td>Exécution du contrat (art. 6.1.b)</td></tr>
+          <tr><td>Lutte contre la fraude</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
+          <tr><td>Respect des obligations légales (comptabilité, SIRET)</td><td>Obligation légale (art. 6.1.c)</td></tr>
+          <tr><td>Amélioration du Service</td><td>Intérêt légitime (art. 6.1.f)</td></tr>
         </tbody>
       </table>
 
       <h2><span class="num">04.</span>Traitement par intelligence artificielle</h2>
-      <p>Pour générer les fiches de vente Vinted, le Service transmet les photos et textes envoyés par l'utilisateur à des fournisseurs d'intelligence artificielle tiers :</p>
+      <p>Pour générer les fiches de vente Vinted, le Service transmet les photos et textes envoyés par l'utilisateur à des fournisseurs d'IA tiers :</p>
       <ul>
         <li><strong>Anthropic</strong> (États-Unis) — Génération du texte des fiches de vente.</li>
         <li><strong>Google (Gemini)</strong> (États-Unis) — Traitement et détourage des images.</li>
       </ul>
-      <p>Ces traitements impliquent un <strong>transfert de données hors de l'Union européenne</strong>, vers les États-Unis. Ces transferts sont encadrés par les <strong>clauses contractuelles types</strong> de la Commission européenne. Les contenus transmis sont utilisés uniquement pour produire la fiche demandée.</p>
-      <p>La conservation de ces données par ces tiers est régie par leurs propres politiques de confidentialité :</p>
+      <p>Ces traitements impliquent un <strong>transfert de données hors UE</strong>, encadré par les <strong>clauses contractuelles types</strong> de la Commission européenne. Les contenus transmis sont utilisés uniquement pour produire la fiche demandée.</p>
       <ul>
         <li><a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Politique de confidentialité d'Anthropic</a></li>
         <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité de Google</a></li>
@@ -239,9 +327,9 @@
 
       <h2><span class="num">05.</span>Conservation des données</h2>
       <h3>Photos transmises au bot</h3>
-      <p>Les photos transmises pour traitement sont stockées <strong>temporairement</strong> dans la base de données du Service et <strong>supprimées automatiquement toutes les heures</strong>. Aucune photo n'est conservée durablement côté serveur Klyn.</p>
+      <p>Les photos transmises pour traitement sont stockées <strong>temporairement</strong> dans la base de données du Service et <strong>supprimées automatiquement toutes les heures</strong>.</p>
       <div class="highlight">
-        <p><strong>Important — conservation par Telegram.</strong> Les photos et messages échangés avec le bot restent stockés dans l'historique de la conversation sur les serveurs de Telegram, exploités par <strong>Telegram FZ-LLC</strong>. Pour les effacer, vous pouvez supprimer manuellement les messages concernés ou supprimer l'intégralité de la conversation avec le bot. Le traitement de ces données par Telegram est régi par la <a href="https://telegram.org/privacy" target="_blank" rel="noopener">politique de confidentialité de Telegram</a>.</p>
+        <p><strong>Important — conservation par Telegram.</strong> Les photos et messages échangés avec le bot restent stockés dans l'historique de la conversation sur les serveurs de Telegram (Telegram FZ-LLC). Pour les effacer, supprimez manuellement les messages ou la conversation. Le traitement par Telegram est régi par leur <a href="https://telegram.org/privacy" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
       </div>
 
       <h3>Autres données</h3>
@@ -250,97 +338,531 @@
           <tr><th>Type de données</th><th>Durée de conservation</th></tr>
         </thead>
         <tbody>
-          <tr><td>Données de compte et d'abonnement actif</td><td>Pendant toute la durée de l'abonnement</td></tr>
-          <tr><td>Données de compte après désabonnement</td><td><strong>3 ans</strong> (prescription civile, art. 2224 du Code civil)</td></tr>
-          <tr><td>Données de facturation et comptables</td><td><strong>10 ans</strong> (obligation légale, art. L123-22 du Code de commerce)</td></tr>
+          <tr><td>Données de compte et d'abonnement actif</td><td>Durée de l'abonnement</td></tr>
+          <tr><td>Données de compte après désabonnement</td><td><strong>3 ans</strong> (art. 2224 du Code civil)</td></tr>
+          <tr><td>Données de facturation et comptables</td><td><strong>10 ans</strong> (art. L123-22 du Code de commerce)</td></tr>
           <tr><td>Empreintes de carte (anti-fraude)</td><td>Durée de l'abonnement + 13 mois</td></tr>
           <tr><td>Logs techniques</td><td><strong>1 an</strong> maximum</td></tr>
           <tr><td>Codes d'activation utilisés</td><td><strong>6 mois</strong> (anti-fraude)</td></tr>
           <tr><td>Codes d'activation expirés non utilisés</td><td>Supprimés au bout de <strong>48 heures</strong></td></tr>
         </tbody>
       </table>
-      <p>À l'expiration de ces durées, les données sont <strong>définitivement supprimées</strong> ou <strong>anonymisées</strong>.</p>
 
       <h2><span class="num">06.</span>Hébergement et sous-traitants</h2>
-      <p>Le Service s'appuie sur les sous-traitants suivants, qui peuvent avoir accès aux données dans le cadre de leurs prestations :</p>
       <table>
         <thead>
           <tr><th>Prestataire</th><th>Rôle</th><th>Localisation</th></tr>
         </thead>
         <tbody>
-          <tr><td><strong>Railway</strong></td><td>Hébergement du backend (n8n, base de données PostgreSQL)</td><td>États-Unis</td></tr>
+          <tr><td><strong>Railway</strong></td><td>Hébergement backend (n8n, PostgreSQL)</td><td>États-Unis</td></tr>
           <tr><td><strong>Vercel</strong></td><td>Hébergement du site web myklyn.fr</td><td>États-Unis / Europe (CDN)</td></tr>
-          <tr><td><strong>Stripe</strong></td><td>Traitement sécurisé des paiements par carte bancaire</td><td>Irlande (UE) + États-Unis</td></tr>
-          <tr><td><strong>Anthropic</strong></td><td>Génération de texte par intelligence artificielle</td><td>États-Unis</td></tr>
+          <tr><td><strong>Stripe</strong></td><td>Traitement des paiements</td><td>Irlande (UE) + États-Unis</td></tr>
+          <tr><td><strong>Anthropic</strong></td><td>Génération de texte par IA</td><td>États-Unis</td></tr>
           <tr><td><strong>Google</strong></td><td>Traitement d'images par IA (Gemini)</td><td>États-Unis</td></tr>
           <tr><td><strong>Resend</strong></td><td>Envoi des emails transactionnels</td><td>États-Unis</td></tr>
-          <tr><td><strong>ImprovMX</strong></td><td>Réception des emails (contact@ et privacy@myklyn.fr)</td><td>États-Unis</td></tr>
-          <tr><td><strong>Telegram</strong></td><td>Messagerie support du Service (bot Klyn)</td><td>Hors UE</td></tr>
-          <tr><td><strong>OVH</strong></td><td>Enregistrement et gestion DNS du domaine myklyn.fr</td><td>France (UE)</td></tr>
+          <tr><td><strong>ImprovMX</strong></td><td>Réception des emails</td><td>États-Unis</td></tr>
+          <tr><td><strong>Telegram</strong></td><td>Messagerie support du Service</td><td>Hors UE</td></tr>
+          <tr><td><strong>OVH</strong></td><td>Gestion DNS du domaine myklyn.fr</td><td>France (UE)</td></tr>
           <tr><td><strong>GitHub</strong></td><td>Hébergement des documents légaux</td><td>États-Unis</td></tr>
         </tbody>
       </table>
-      <p>Plusieurs prestataires étant situés hors de l'Union européenne, les données traitées font l'objet d'un transfert hors UE, encadré par les <strong>clauses contractuelles types</strong> de la Commission européenne ou par des décisions d'adéquation lorsque applicables.</p>
 
       <h2><span class="num">07.</span>Vos droits</h2>
-      <p>Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :</p>
       <ul>
-        <li><strong>Droit d'accès</strong> (art. 15 RGPD) : obtenir une copie des données personnelles vous concernant.</li>
-        <li><strong>Droit de rectification</strong> (art. 16 RGPD) : corriger des données inexactes ou incomplètes.</li>
-        <li><strong>Droit à l'effacement</strong> (art. 17 RGPD) : demander la suppression de vos données, dans les limites des obligations légales.</li>
-        <li><strong>Droit à la limitation</strong> du traitement (art. 18 RGPD).</li>
-        <li><strong>Droit d'opposition</strong> au traitement (art. 21 RGPD).</li>
-        <li><strong>Droit à la portabilité</strong> de vos données (art. 20 RGPD).</li>
-        <li><strong>Droit de définir des directives</strong> post-mortem (art. 85 loi Informatique et Libertés).</li>
+        <li><strong>Droit d'accès</strong> (art. 15 RGPD)</li>
+        <li><strong>Droit de rectification</strong> (art. 16 RGPD)</li>
+        <li><strong>Droit à l'effacement</strong> (art. 17 RGPD)</li>
+        <li><strong>Droit à la limitation du traitement</strong> (art. 18 RGPD)</li>
+        <li><strong>Droit d'opposition</strong> (art. 21 RGPD)</li>
+        <li><strong>Droit à la portabilité</strong> (art. 20 RGPD)</li>
+        <li><strong>Droit de définir des directives</strong> post-mortem (art. 85 loi Informatique et Libertés)</li>
       </ul>
       <div class="contact-box">
         <strong>Pour exercer ces droits</strong>
         Envoyez votre demande à <a href="mailto:privacy@myklyn.fr">privacy@myklyn.fr</a><br>
         Réponse sous 1 mois maximum (art. 12 RGPD).
       </div>
-      <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de la <strong>Commission Nationale de l'Informatique et des Libertés (CNIL)</strong> : <a href="https://www.cnil.fr/" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
+      <p>Réclamation possible auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr/" target="_blank" rel="noopener">www.cnil.fr</a>.</p>
 
       <h2><span class="num">08.</span>Sécurité</h2>
-      <p>Des mesures techniques et organisationnelles sont mises en œuvre pour protéger vos données :</p>
       <ul>
-        <li><strong>Chiffrement TLS</strong> de toutes les communications (HTTPS)</li>
-        <li><strong>Accès restreint</strong> à la base de données (authentification + IP whitelisting)</li>
-        <li><strong>Vérification cryptographique</strong> (HMAC SHA-256) des événements de paiement Stripe</li>
-        <li><strong>Suppression automatique</strong> des photos toutes les heures</li>
-        <li><strong>Aucun stockage</strong> de numéros de carte bancaire ou de mots de passe en clair</li>
-        <li><strong>Codes d'activation</strong> à usage unique avec expiration sous 48 heures</li>
-        <li><strong>Sauvegardes régulières</strong> de la base de données</li>
-        <li><strong>Monitoring continu</strong> de l'infrastructure</li>
-        <li><strong>Journalisation</strong> des accès et opérations sensibles</li>
+        <li>Chiffrement TLS (HTTPS) de toutes les communications</li>
+        <li>Accès restreint à la base de données</li>
+        <li>Vérification cryptographique (HMAC SHA-256) des événements Stripe</li>
+        <li>Suppression automatique des photos toutes les heures</li>
+        <li>Aucun stockage de numéros de carte ou mots de passe en clair</li>
+        <li>Codes d'activation à usage unique avec expiration 48h</li>
+        <li>Sauvegardes régulières chiffrées</li>
+        <li>Monitoring continu de l'infrastructure</li>
+        <li>Journalisation des accès et opérations sensibles</li>
       </ul>
-      <p>En cas de violation de données susceptible d'engendrer un risque pour vos droits et libertés, vous serez notifié dans les meilleurs délais, conformément à l'article 34 du RGPD.</p>
+      <p>En cas de violation de données, vous serez notifié conformément à l'article 34 du RGPD.</p>
 
       <h2><span class="num">09.</span>Cookies et traceurs</h2>
-      <p>Le <strong>bot Telegram Klyn</strong> fonctionne intégralement au sein de l'application Telegram et <strong>n'utilise aucun cookie</strong>.</p>
+      <p>Le <strong>bot Telegram Klyn</strong> n'utilise <strong>aucun cookie</strong>.</p>
       <p>Le <strong>site web myklyn.fr</strong> peut utiliser :</p>
       <ul>
-        <li><strong>Cookies strictement nécessaires</strong> au fonctionnement du site — exemptés de consentement (CNIL).</li>
-        <li><strong>Cookies tiers de paiement</strong> déposés par Stripe lors d'une transaction (prévention de fraude, conformité PCI-DSS).</li>
+        <li><strong>Cookies strictement nécessaires</strong> — exemptés de consentement (CNIL)</li>
+        <li><strong>Cookies tiers de paiement</strong> déposés par Stripe (conformité PCI-DSS)</li>
       </ul>
       <p>Aucun cookie de tracking publicitaire, d'analyse comportementale ou de profilage marketing n'est utilisé.</p>
 
       <h2><span class="num">10.</span>Modifications</h2>
-      <p>La présente politique de confidentialité peut être mise à jour, notamment en cas d'évolution du Service, de modifications de la réglementation, ou de changement de prestataire. La <strong>date de dernière mise à jour</strong> figure en haut du document.</p>
-      <p>Toute modification substantielle vous sera communiquée par email à l'adresse associée à votre compte, au moins <strong>15 jours avant son entrée en vigueur</strong>. Vous pourrez exercer votre droit d'opposition ou résilier votre abonnement si vous n'acceptez pas les nouvelles conditions.</p>
+      <p>Toute modification substantielle vous sera communiquée par email au moins <strong>15 jours avant son entrée en vigueur</strong>. Vous pourrez exercer votre droit d'opposition ou résilier votre abonnement.</p>
 
       <div class="contact-box">
         <strong>📬 Contact</strong>
-        <p style="margin: 8px 0;">Pour toute question relative à cette politique :</p>
         <p style="margin: 8px 0;"><strong>Email :</strong> <a href="mailto:privacy@myklyn.fr">privacy@myklyn.fr</a></p>
         <p style="margin: 8px 0; font-size: 13px;"><strong>Adresse postale :</strong><br>Ovise Noah — NovisEcom<br>6 Rue Mably, 18000 Bourges, France</p>
       </div>
+    </section>
 
-      <div class="footer">
-        <p>Klyn — Politique de confidentialité v2.0</p>
-        <p>En vigueur à compter du 5 juin 2026</p>
+
+    <!-- =============== MENTIONS LÉGALES ===================== -->
+    <section id="mentions" class="doc-section">
+      <header class="doc-header">
+        <div class="logo">K</div>
+        <h1>Mentions légales</h1>
+        <p class="subtitle">Informations légales obligatoires</p>
+      </header>
+
+      <div class="meta">
+        <strong>Dernière mise à jour :</strong> 27 mai 2026<br>
+        <strong>Date d'effectivité :</strong> 5 juin 2026
       </div>
 
+      <h2><span class="num">01.</span>Éditeur du Service</h2>
+      <p>Le Service <strong>Klyn</strong> (ci-après « le Service ») est édité par :</p>
+      <ul>
+        <li><strong>Nom de l'éditeur :</strong> Ovise Noah</li>
+        <li><strong>Statut juridique :</strong> Entrepreneur individuel (micro-entrepreneur)</li>
+        <li><strong>Nom commercial :</strong> NovisEcom</li>
+        <li><strong>SIREN :</strong> 105 368 328</li>
+        <li><strong>SIRET :</strong> 10536832800016</li>
+        <li><strong>Code APE :</strong> 5829C — Édition de logiciels applicatifs</li>
+        <li><strong>Date d'immatriculation au RNE :</strong> 22 mai 2026</li>
+        <li><strong>Date de début d'activité :</strong> 5 juin 2026</li>
+        <li><strong>Adresse du siège :</strong> 6 Rue Mably, 18000 Bourges, France</li>
+        <li><strong>TVA :</strong> Non applicable — article 293 B du Code Général des Impôts (franchise en base de TVA)</li>
+      </ul>
+
+      <h2><span class="num">02.</span>Directeur de la publication</h2>
+      <p><strong>Ovise Noah</strong>, en qualité d'entrepreneur individuel et d'éditeur du Service.</p>
+
+      <h2><span class="num">03.</span>Contact</h2>
+      <ul>
+        <li><strong>Contact général :</strong> <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a></li>
+        <li><strong>Protection des données :</strong> <a href="mailto:privacy@myklyn.fr">privacy@myklyn.fr</a></li>
+        <li><strong>Adresse postale :</strong> 6 Rue Mably, 18000 Bourges, France</li>
+      </ul>
+
+      <h2><span class="num">04.</span>Hébergeur du site web</h2>
+      <p>Le site web <strong>myklyn.fr</strong> est hébergé par :</p>
+      <ul>
+        <li><strong>Vercel Inc.</strong></li>
+        <li>340 S Lemon Ave #4133</li>
+        <li>Walnut, CA 91789, États-Unis</li>
+        <li>Site web : <a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a></li>
+      </ul>
+
+      <h2><span class="num">05.</span>Hébergeur des documents légaux</h2>
+      <p>Les présentes mentions légales et autres documents légaux sont hébergés par :</p>
+      <ul>
+        <li><strong>GitHub, Inc.</strong> (filiale de Microsoft Corporation)</li>
+        <li>88 Colin P. Kelly Jr Street</li>
+        <li>San Francisco, CA 94107, États-Unis</li>
+        <li>Site web : <a href="https://github.com" target="_blank" rel="noopener">github.com</a></li>
+      </ul>
+
+      <h2><span class="num">06.</span>Hébergeur du backend</h2>
+      <p>Le backend du Service (workflows et base de données) est hébergé par :</p>
+      <ul>
+        <li><strong>Railway Corp.</strong></li>
+        <li>2261 Market Street #4382</li>
+        <li>San Francisco, CA 94114, États-Unis</li>
+        <li>Site web : <a href="https://railway.app" target="_blank" rel="noopener">railway.app</a></li>
+      </ul>
+
+      <h2><span class="num">07.</span>Nom de domaine</h2>
+      <p>Le nom de domaine <strong>myklyn.fr</strong> est enregistré et géré via :</p>
+      <ul>
+        <li><strong>OVH SAS</strong></li>
+        <li>2 rue Kellermann, 59100 Roubaix, France</li>
+        <li>RCS Lille Métropole 424 761 419</li>
+        <li>Site web : <a href="https://www.ovh.com" target="_blank" rel="noopener">ovh.com</a></li>
+      </ul>
+
+      <h2><span class="num">08.</span>Propriété intellectuelle</h2>
+      <p>L'ensemble des éléments composant le Service Klyn (nom, marque, logo, design, code source, documentation, contenus textuels, graphiques et multimédias) est la propriété exclusive d'<strong>Ovise Noah</strong>, et est protégé par les législations française et internationale relatives à la propriété intellectuelle.</p>
+      <p>Toute reproduction, représentation, modification, publication, adaptation, totale ou partielle, par quelque procédé que ce soit, est strictement interdite sans autorisation écrite préalable.</p>
+
+      <h2><span class="num">09.</span>Crédits et technologies</h2>
+      <p>Le Service repose notamment sur les technologies suivantes : n8n (automatisation), PostgreSQL (base de données), Telegram Bot API, Stripe (paiements), Anthropic Claude (IA texte), Google Gemini (IA images), Resend (emails).</p>
+
+      <h2><span class="num">10.</span>Loi applicable</h2>
+      <p>Les présentes mentions légales sont soumises au <strong>droit français</strong>. Tout litige relatif au Service relèvera de la compétence des tribunaux français.</p>
+    </section>
+
+
+    <!-- ========== CONDITIONS GÉNÉRALES DE VENTE ============= -->
+    <section id="cgv" class="doc-section">
+      <header class="doc-header">
+        <div class="logo">K</div>
+        <h1>Conditions Générales de Vente</h1>
+        <p class="subtitle">CGV — Klyn</p>
+      </header>
+
+      <div class="meta">
+        <strong>Dernière mise à jour :</strong> 27 mai 2026<br>
+        <strong>Date d'effectivité :</strong> 5 juin 2026
+      </div>
+
+      <h2><span class="num">01.</span>Objet et acceptation</h2>
+      <p>Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent les modalités de souscription et d'utilisation des services d'abonnement payants au Service <strong>Klyn</strong>, édité par Ovise Noah (NovisEcom), SIRET 10536832800016.</p>
+      <p>Toute souscription à un abonnement implique l'acceptation pleine et entière des présentes CGV, des <a href="#cgu">Conditions Générales d'Utilisation</a> et de la <a href="#confidentialite">Politique de confidentialité</a>. Le Client reconnaît avoir pris connaissance de ces documents avant la finalisation de sa commande.</p>
+
+      <h2><span class="num">02.</span>Définitions</h2>
+      <ul>
+        <li><strong>Service / Klyn :</strong> l'assistant de vente Vinted exploité via un bot Telegram, permettant la génération automatique de fiches produit et le détourage de photos.</li>
+        <li><strong>Éditeur :</strong> Ovise Noah, exerçant sous le nom commercial NovisEcom.</li>
+        <li><strong>Client :</strong> toute personne physique majeure (B2C) ou personne morale (B2B) souscrivant à un abonnement.</li>
+        <li><strong>Abonnement :</strong> contrat de service à durée indéterminée, facturé périodiquement.</li>
+        <li><strong>Crédits / Fiches :</strong> unités de consommation incluses dans chaque forfait mensuel.</li>
+        <li><strong>Code d'activation :</strong> identifiant unique envoyé par email permettant de lier l'abonnement à un compte Telegram.</li>
+      </ul>
+
+      <h2><span class="num">03.</span>Description du Service et forfaits</h2>
+      <p>Le Service propose <strong>sept (7) forfaits d'abonnement</strong>, dont quatre grand public et trois professionnels.</p>
+
+      <h3>Forfaits grand public (B2C)</h3>
+      <table>
+        <thead>
+          <tr><th>Forfait</th><th>Prix/mois TTC</th><th>Fiches</th><th>Détourages</th><th>Modèle IA</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Essentiel</strong></td><td>12 €</td><td>40</td><td>0</td><td>Standard</td></tr>
+          <tr><td><strong>Pro</strong></td><td>24 €</td><td>60</td><td>50</td><td>Premium</td></tr>
+          <tr><td><strong>Signature</strong></td><td>39 €</td><td>150</td><td>125</td><td>Premium</td></tr>
+          <tr><td><strong>Élite</strong></td><td>69 €</td><td>250</td><td>200</td><td>Premium</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Forfaits professionnels (B2B — SIRET obligatoire)</h3>
+      <table>
+        <thead>
+          <tr><th>Forfait</th><th>Prix/mois TTC</th><th>Fiches</th><th>Détourages</th><th>SAV/mois</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Entreprise 1</strong></td><td>119 €</td><td>400</td><td>325</td><td>3 modifications</td></tr>
+          <tr><td><strong>Entreprise 2</strong></td><td>249 €</td><td>900</td><td>750</td><td>5 modifications</td></tr>
+          <tr><td><strong>Entreprise 3</strong></td><td>399 €</td><td>2 500</td><td>2 000</td><td>10 modifications</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Service de modifications (forfait Élite et forfaits Entreprise)</h3>
+      <p>Une « modification » au titre du SAV est définie strictement comme <strong>un ajustement des paramètres de génération de fiches</strong> du Client (ton de description, structure, couleur de fond générique, paramètres de style). Toute demande sortant de ce périmètre constitue une prestation distincte non incluse.</p>
+      <ul>
+        <li><strong>Délai de traitement :</strong> 24 à 48 heures ouvrées</li>
+        <li><strong>Canal :</strong> <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a></li>
+        <li><strong>Report :</strong> les modifications non utilisées sont perdues en fin de mois</li>
+        <li><strong>Forfait Élite :</strong> 1 modification incluse par mois</li>
+      </ul>
+
+      <h3>Règles communes aux crédits</h3>
+      <ul>
+        <li>Les crédits (fiches, détourages) sont <strong>plafonnés mensuellement</strong> selon le forfait souscrit.</li>
+        <li>Les crédits non consommés <strong>ne sont pas reportés</strong> au mois suivant et sont remis à zéro le 1er de chaque mois.</li>
+        <li>En cas de dépassement du quota mensuel, le Client peut <strong>passer à un forfait supérieur</strong> à tout moment. Le changement prend effet immédiatement et la différence de prix est calculée au prorata.</li>
+        <li>Aucun forfait ne propose de crédits illimités.</li>
+      </ul>
+
+      <h2><span class="num">04.</span>Souscription et activation</h2>
+      <p>La souscription s'effectue en ligne via la page de paiement sécurisée du Service. Le processus comporte les étapes suivantes :</p>
+      <ol>
+        <li>Sélection du forfait souhaité (mensuel ou annuel)</li>
+        <li>Renseignement des informations de facturation et, le cas échéant, du numéro SIRET (forfaits Entreprise)</li>
+        <li>Paiement sécurisé par carte bancaire via le prestataire Stripe</li>
+        <li>Réception par email d'un <strong>code d'activation unique</strong>, valable 48 heures</li>
+        <li>Activation du Service via le bot Telegram en saisissant le code d'activation</li>
+      </ol>
+      <p>Le contrat est conclu et le Service est activé dès lors que le paiement est validé par Stripe et que le code d'activation est utilisé dans le bot Telegram.</p>
+
+      <h2><span class="num">05.</span>Tarifs et modalités de paiement</h2>
+      <h3>Devise et fiscalité</h3>
+      <p>Tous les prix sont indiqués en <strong>euros (€) toutes taxes comprises (TTC)</strong>. Conformément à l'article 293 B du CGI, l'Éditeur bénéficie de la franchise en base de TVA : <strong>la TVA n'est pas applicable</strong>.</p>
+
+      <h3>Périodicité</h3>
+      <p>Le Client choisit librement entre :</p>
+      <ul>
+        <li><strong>Paiement mensuel</strong> — prélèvement automatique chaque mois à la date de souscription</li>
+        <li><strong>Paiement annuel</strong> — prélèvement unique en début de période, avec une remise de <strong>15 %</strong> par rapport au cumul des 12 mois</li>
+      </ul>
+
+      <h3>Moyens de paiement</h3>
+      <p>Le paiement s'effectue exclusivement par <strong>carte bancaire</strong>, via le prestataire de paiement sécurisé <strong>Stripe Payments Europe Ltd.</strong> Aucune donnée de carte bancaire n'est stockée par l'Éditeur ; seule une empreinte technique anonymisée est conservée à des fins de prévention de fraude.</p>
+
+      <h3>Échec de paiement</h3>
+      <p>En cas d'échec du prélèvement (carte expirée, fonds insuffisants, etc.), Stripe effectue <strong>jusqu'à deux (2) nouvelles tentatives</strong> dans les jours suivants. Si tous les essais échouent, l'abonnement est suspendu et l'accès au Service est interrompu. Le Client est notifié par email à chaque échec.</p>
+
+      <h3>Révision des tarifs</h3>
+      <p>L'Éditeur se réserve le droit de modifier ses tarifs. Toute modification tarifaire applicable à un abonnement en cours sera notifiée au Client par email <strong>au moins 30 jours avant son entrée en vigueur</strong>, lui permettant, le cas échéant, de résilier son abonnement.</p>
+
+      <h2><span class="num">06.</span>Engagement et résiliation</h2>
+      <h3>Forfaits grand public</h3>
+      <p>Les forfaits <strong>Essentiel, Pro, Signature et Élite</strong> sont souscrits <strong>sans engagement de durée</strong>. Le Client peut résilier à tout moment.</p>
+      <ul>
+        <li>La résiliation prend effet <strong>à la fin de la période en cours</strong> (mois ou année selon le forfait).</li>
+        <li>Le Client conserve l'accès au Service jusqu'à la fin de la période déjà payée.</li>
+        <li>Aucun remboursement au prorata n'est effectué.</li>
+      </ul>
+
+      <h3>Forfaits Entreprise — engagement initial de 3 mois</h3>
+      <p>Les forfaits <strong>Entreprise 1, 2 et 3</strong> sont souscrits avec un <strong>engagement initial de trois (3) mois</strong>. Au-delà, le contrat se poursuit de mois en mois sans engagement.</p>
+      <div class="highlight">
+        <p><strong>Résiliation anticipée durant les 3 premiers mois :</strong> possible, moyennant le versement d'une indemnité égale à <strong>30 % des mensualités restant à courir</strong> jusqu'à la fin de la période d'engagement de 3 mois.</p>
+      </div>
+
+      <h3>Modalités de résiliation</h3>
+      <p>La résiliation s'effectue :</p>
+      <ul>
+        <li>Par email à <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a> depuis l'adresse associée au compte ;</li>
+        <li>Ou, le cas échéant, via l'espace client Stripe.</li>
+      </ul>
+      <p>Aucune justification n'est requise.</p>
+
+      <h3>Résiliation par l'Éditeur</h3>
+      <p>L'Éditeur peut résilier de plein droit l'abonnement, sans préavis ni indemnité, dans les cas suivants :</p>
+      <ul>
+        <li>Non-paiement après les relances de Stripe</li>
+        <li>Fraude avérée (usurpation de code d'activation, fausses informations, contournement des restrictions)</li>
+        <li>Usage abusif du Service (insultes ou harcèlement au support, spam, atteinte au fonctionnement)</li>
+        <li>Demande formelle d'une autorité judiciaire ou administrative</li>
+      </ul>
+
+      <h2><span class="num">07.</span>Droit de rétractation</h2>
+      <div class="warning-box">
+        <p><strong>Renonciation expresse au droit de rétractation.</strong></p>
+        <p>Conformément à l'article L221-28 1° du Code de la consommation, le Service étant fourni immédiatement après le paiement et étant pleinement exécuté avant la fin du délai de rétractation, le Client <strong>renonce expressément à son droit de rétractation de 14 jours</strong> lors de la souscription.</p>
+        <p>Cette renonciation est confirmée par le Client lors du processus de paiement, par une case à cocher explicite.</p>
+      </div>
+
+      <h2><span class="num">08.</span>Garantie « satisfait ou remboursé » (forfait Essentiel uniquement)</h2>
+      <p>Le forfait <strong>Essentiel</strong> bénéficie d'une garantie <strong>satisfait ou remboursé de sept (7) jours calendaires</strong>, valable uniquement à la première souscription au Service.</p>
+      <h3>Conditions de la garantie</h3>
+      <ul>
+        <li><strong>Périmètre :</strong> exclusivement le forfait Essentiel à 12 €/mois</li>
+        <li><strong>Délai :</strong> demande à formuler dans les 7 jours calendaires suivant le paiement</li>
+        <li><strong>Justification :</strong> aucune justification n'est requise</li>
+        <li><strong>Modalité :</strong> demande par email à <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a></li>
+        <li><strong>Remboursement :</strong> intégral, traité sous 14 jours via le moyen de paiement initial</li>
+        <li><strong>Usage unique :</strong> la garantie ne s'applique qu'à la première souscription au Service ; toute nouvelle souscription ultérieure n'en bénéficie pas</li>
+      </ul>
+
+      <h3>Lutte contre la fraude au remboursement</h3>
+      <p>Afin de prévenir tout abus, l'Éditeur se réserve le droit de refuser un remboursement lorsque :</p>
+      <ul>
+        <li>L'empreinte technique de la carte bancaire est associée à une souscription antérieure déjà remboursée</li>
+        <li>L'adresse email utilisée est identifiée comme jetable ou temporaire</li>
+        <li>Des indices sérieux suggèrent une multiplication de comptes par un même utilisateur</li>
+      </ul>
+
+      <h2><span class="num">09.</span>Politique de remboursement (hors garantie)</h2>
+      <p>En dehors de la garantie « satisfait ou remboursé » applicable au forfait Essentiel, <strong>aucun remboursement n'est dû</strong>, notamment :</p>
+      <ul>
+        <li>En cas de résiliation en cours de période payée</li>
+        <li>En cas de sous-utilisation des crédits inclus dans le forfait</li>
+        <li>En cas d'erreur de choix de forfait par le Client</li>
+      </ul>
+      <p>L'Éditeur conserve toutefois la faculté de procéder à un remboursement ou à un avoir, à titre commercial et discrétionnaire, en cas de défaillance technique majeure imputable au Service et dûment constatée.</p>
+
+      <h2><span class="num">10.</span>Obligations du Client</h2>
+      <p>Le Client s'engage à :</p>
+      <ul>
+        <li>Fournir des informations exactes et à jour lors de la souscription</li>
+        <li>Conserver la confidentialité de son code d'activation et ne pas le partager</li>
+        <li>Ne pas utiliser le Service pour des finalités illégales (contrefaçon, vente d'articles interdits, fraude)</li>
+        <li>Ne pas revendre, louer ou redistribuer l'accès au Service sous une autre marque</li>
+        <li>Garantir qu'il dispose des droits nécessaires sur les photos et contenus qu'il transmet au bot</li>
+        <li>Respecter les Conditions Générales d'Utilisation et les conditions de Telegram</li>
+      </ul>
+
+      <h2><span class="num">11.</span>Responsabilité</h2>
+      <p>Le Service est fourni en l'état (« <em>as is</em> »). L'Éditeur s'engage à mettre en œuvre tous les moyens raisonnables pour assurer son bon fonctionnement, sans toutefois garantir une disponibilité ininterrompue (engagement de moyens, pas de SLA contractuel).</p>
+      <p>La responsabilité de l'Éditeur est limitée aux dommages directs et prévisibles résultant d'une faute prouvée. En tout état de cause, elle ne pourra excéder le <strong>montant total facturé au Client durant les douze (12) derniers mois</strong>.</p>
+      <p>L'Éditeur ne saurait être tenu responsable :</p>
+      <ul>
+        <li>Des contenus générés par les modèles d'intelligence artificielle (le Client est seul responsable de la vérification et de la publication des fiches)</li>
+        <li>Des interruptions causées par les prestataires tiers (Telegram, Stripe, Anthropic, Google, Railway, etc.)</li>
+        <li>Des dommages indirects (perte de chiffre d'affaires, perte de clientèle, atteinte à l'image)</li>
+        <li>De l'usage non conforme du Service par le Client</li>
+        <li>Des sanctions ou suspensions appliquées par Vinted ou tout autre plateforme tierce</li>
+      </ul>
+
+      <h2><span class="num">12.</span>Force majeure</h2>
+      <p>Aucune des parties ne pourra être tenue responsable d'un manquement à ses obligations résultant d'un cas de force majeure tel que défini par l'article 1218 du Code civil et la jurisprudence française : événements imprévisibles, irrésistibles et extérieurs aux parties (catastrophes naturelles, pandémies, défaillance majeure des infrastructures Internet, actes des autorités publiques, etc.).</p>
+
+      <h2><span class="num">13.</span>Médiation et règlement des litiges</h2>
+      <p>Conformément à l'article L612-1 du Code de la consommation, en cas de litige non résolu à l'amiable avec le Service, tout Client consommateur peut recourir gratuitement à un médiateur de la consommation.</p>
+      <div class="highlight">
+        <p><strong>Médiateur compétent :</strong> un médiateur de la consommation sera désigné prochainement et ses coordonnées seront communiquées dès leur disponibilité. En attendant, toute réclamation peut être adressée préalablement à <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a>.</p>
+      </div>
+      <p>Le Client est également informé qu'il peut recourir à la plateforme européenne de règlement en ligne des litiges (RLL) : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a></p>
+
+      <h2><span class="num">14.</span>Droit applicable et juridiction</h2>
+      <p>Les présentes CGV sont régies par le <strong>droit français</strong>.</p>
+      <p>En cas de litige, et après tentative de résolution amiable et de médiation, les <strong>tribunaux français</strong> seront seuls compétents. Pour les Clients consommateurs, la juridiction compétente est déterminée selon les articles R211-3 et suivants du Code de la consommation.</p>
+
+      <h2><span class="num">15.</span>Modifications des CGV</h2>
+      <p>L'Éditeur se réserve le droit de modifier les présentes CGV à tout moment. Toute modification substantielle sera notifiée au Client par email <strong>au moins 30 jours avant son entrée en vigueur</strong>. Le Client pourra, dans ce délai, exercer son droit de résiliation s'il refuse les nouvelles conditions.</p>
+    </section>
+
+
+    <!-- ====== CONDITIONS GÉNÉRALES D'UTILISATION ============ -->
+    <section id="cgu" class="doc-section">
+      <header class="doc-header">
+        <div class="logo">K</div>
+        <h1>Conditions Générales d'Utilisation</h1>
+        <p class="subtitle">CGU — Klyn</p>
+      </header>
+
+      <div class="meta">
+        <strong>Dernière mise à jour :</strong> 27 mai 2026<br>
+        <strong>Date d'effectivité :</strong> 5 juin 2026
+      </div>
+
+      <h2><span class="num">01.</span>Objet</h2>
+      <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les règles et conditions d'utilisation du Service <strong>Klyn</strong>, accessible via un bot Telegram dédié.</p>
+      <p>Toute utilisation du Service implique l'acceptation pleine et entière des présentes CGU, des <a href="#cgv">CGV</a> et de la <a href="#confidentialite">Politique de confidentialité</a>.</p>
+
+      <h2><span class="num">02.</span>Accès au Service</h2>
+      <p>L'accès au Service nécessite :</p>
+      <ul>
+        <li>Un compte Telegram actif et fonctionnel</li>
+        <li>Une connexion Internet</li>
+        <li>Un abonnement actif (cf. <a href="#cgv">CGV</a>)</li>
+        <li>L'activation préalable du Service via un code d'activation envoyé par email</li>
+      </ul>
+      <p>Le Service est accessible <strong>24h/24 et 7j/7</strong>, sous réserve des interruptions techniques nécessaires à sa maintenance ou en cas de force majeure.</p>
+
+      <h2><span class="num">03.</span>Public et conditions d'éligibilité</h2>
+      <p>Le Service est accessible à toute personne disposant d'un compte Telegram, sous réserve qu'elle respecte les conditions d'âge minimum requises par Telegram et par la législation applicable à la vente sur la plateforme Vinted.</p>
+      <p>Les forfaits <strong>Entreprise</strong> sont réservés exclusivement aux professionnels disposant d'un numéro <strong>SIRET valide</strong>, qui peut être vérifié à la souscription.</p>
+      <p>Le Client garantit avoir la capacité juridique pour souscrire au Service et utiliser ses fonctionnalités.</p>
+
+      <h2><span class="num">04.</span>Identification et compte utilisateur</h2>
+      <p>L'identification du Client repose sur son <strong>identifiant unique Telegram (chat_id)</strong>. Un abonnement est strictement personnel et associé à <strong>un seul chat_id Telegram</strong>.</p>
+      <ul>
+        <li>Le partage du code d'activation avec un tiers est <strong>strictement interdit</strong></li>
+        <li>L'utilisation simultanée d'un même abonnement par plusieurs comptes Telegram est <strong>interdite</strong></li>
+        <li>En cas de changement de compte Telegram, le Client peut contacter <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a> pour demander un transfert</li>
+      </ul>
+      <p>L'Éditeur met en œuvre des mécanismes techniques (empreinte de carte, détection des codes usurpés, vérification des activations) pour prévenir les usages frauduleux.</p>
+
+      <h2><span class="num">05.</span>Fonctionnement du bot et règles d'utilisation</h2>
+      <h3>Génération de fiches</h3>
+      <ul>
+        <li>L'utilisateur envoie au bot les photos et informations de l'article à vendre</li>
+        <li>Le bot transmet ces contenus aux fournisseurs d'IA (Anthropic, Google Gemini)</li>
+        <li>Une fiche de vente Vinted est générée et retournée à l'utilisateur</li>
+      </ul>
+
+      <h3>Limites techniques</h3>
+      <ul>
+        <li><strong>Photos par fiche :</strong> maximum <strong>10 photos</strong></li>
+        <li><strong>Format des photos :</strong> doivent être dans un format compatible avec Telegram</li>
+        <li><strong>Séquence :</strong> il convient d'attendre la fin de la génération d'une fiche avant d'en lancer une nouvelle</li>
+        <li><strong>Crédits :</strong> chaque génération consomme un crédit (fiche et/ou détourage selon le forfait)</li>
+      </ul>
+
+      <h3>Maintenance et disponibilité</h3>
+      <p>Le bot fonctionne en continu (24h/24, 7j/7). Toutefois, des opérations de maintenance peuvent occasionnellement nécessiter une interruption temporaire du Service. Dans la mesure du possible, ces opérations seront :</p>
+      <ul>
+        <li>Programmées en dehors des heures de forte utilisation</li>
+        <li>Annoncées à l'avance par message sur le bot Telegram ou par email</li>
+      </ul>
+      <p>L'Éditeur ne souscrit pas à un engagement de disponibilité chiffré (SLA), mais s'engage à fournir le Service selon une obligation de moyens.</p>
+
+      <h2><span class="num">06.</span>Comportements interdits</h2>
+      <p>Dans le cadre de l'utilisation du Service, le Client s'interdit notamment de :</p>
+      <ul>
+        <li>Utiliser le Service pour générer des fiches d'articles <strong>contrefaisants, illégaux, ou interdits</strong> sur Vinted ou par la loi française</li>
+        <li>Transmettre des <strong>photos ou contenus dont il n'a pas les droits</strong> (œuvres protégées, photos de tiers sans autorisation, contenus piratés)</li>
+        <li>Tenter de <strong>contourner les quotas</strong>, les limitations techniques, ou les mécanismes de sécurité du Service</li>
+        <li>Effectuer des <strong>tentatives d'intrusion</strong>, d'<em>injection</em>, ou toute autre action malveillante contre le Service ou ses infrastructures</li>
+        <li>Utiliser le Service à des fins de <strong>spam</strong> ou de <strong>surcharge volontaire</strong></li>
+        <li>Adopter un comportement <strong>injurieux, harcelant ou menaçant</strong> envers l'Éditeur, le support ou tout autre utilisateur</li>
+        <li><strong>Revendre, louer ou redistribuer</strong> l'accès au Service sous une autre marque ou identité</li>
+        <li>Procéder à de l'<strong>ingénierie inverse</strong> (<em>reverse engineering</em>) du Service, du bot ou des prompts utilisés</li>
+      </ul>
+      <p>Tout manquement constaté peut entraîner la suspension ou la résiliation immédiate de l'abonnement, sans préavis ni remboursement, et sans préjudice de poursuites éventuelles.</p>
+
+      <h2><span class="num">07.</span>Contenus générés et propriété</h2>
+      <p>Les <strong>fiches générées</strong> par le Service à la demande du Client (descriptions, titres, images détourées) sont la <strong>propriété du Client</strong>, qui peut les utiliser librement, notamment pour les publier sur Vinted ou toute autre plateforme.</p>
+      <p>Le <strong>Service Klyn lui-même</strong> (bot, code source, infrastructure technique, prompts internes, marque, logo, design, documentation) demeure la <strong>propriété exclusive de l'Éditeur</strong> et n'est concédé au Client qu'en simple licence d'utilisation, non exclusive et non transférable, pour la durée de son abonnement.</p>
+      <div class="warning-box">
+        <p><strong>Garantie du Client sur les contenus transmis.</strong></p>
+        <p>Le Client garantit qu'il dispose de tous les droits, autorisations et licences nécessaires sur les photos et contenus qu'il transmet au bot. L'Éditeur ne saurait être tenu responsable d'une éventuelle atteinte aux droits de tiers (droit d'auteur, droit à l'image, droit des marques) résultant des contenus transmis par le Client.</p>
+        <p>Le Client garantit également l'Éditeur contre toute réclamation, action ou condamnation qui pourrait résulter de l'utilisation, par lui ou par un tiers à qui il aurait donné accès, de contenus transmis au Service.</p>
+      </div>
+
+      <h2><span class="num">08.</span>Responsabilité de l'utilisateur</h2>
+      <p>Le Client est seul responsable :</p>
+      <ul>
+        <li>De la <strong>vérification, de la relecture et de la publication</strong> des fiches générées par le Service</li>
+        <li>De la <strong>conformité de ses ventes</strong> sur Vinted aux conditions de cette plateforme</li>
+        <li>Du <strong>respect de la législation</strong> applicable à la vente (notamment fiscale, douanière et consommateur)</li>
+        <li>De la <strong>sécurité de son compte Telegram</strong> et de son code d'activation</li>
+        <li>De toutes les <strong>actions effectuées</strong> sous son identifiant Telegram</li>
+      </ul>
+
+      <h2><span class="num">09.</span>Évolutions du Service</h2>
+      <p>L'Éditeur se réserve le droit de :</p>
+      <ul>
+        <li>Faire évoluer les fonctionnalités du Service</li>
+        <li>Modifier les modèles d'intelligence artificielle utilisés</li>
+        <li>Ajouter, modifier ou retirer des fonctionnalités</li>
+        <li>Ajuster les quotas, dans la limite des engagements contractuels en cours</li>
+      </ul>
+      <p>Les évolutions significatives seront communiquées par email ou par message sur le bot. Toute évolution défavorable au Client (réduction de fonctionnalités, augmentation tarifaire) sera notifiée au moins <strong>30 jours avant son entrée en vigueur</strong>, permettant au Client de résilier sans pénalité.</p>
+
+      <h2><span class="num">10.</span>Suspension et résiliation</h2>
+      <p>L'Éditeur peut suspendre ou résilier l'accès au Service, sans préavis, dans les cas prévus à l'<a href="#cgv">article 6 des CGV</a>, notamment :</p>
+      <ul>
+        <li>Manquement aux présentes CGU</li>
+        <li>Comportement interdit (cf. article 06)</li>
+        <li>Non-paiement</li>
+        <li>Demande d'une autorité compétente</li>
+      </ul>
+      <p>En cas de suspension légitime, aucun remboursement ne sera dû au Client.</p>
+
+      <h2><span class="num">11.</span>Données personnelles</h2>
+      <p>Le traitement des données personnelles dans le cadre du Service est régi par la <a href="#confidentialite">Politique de confidentialité</a>, partie intégrante des présentes CGU.</p>
+
+      <h2><span class="num">12.</span>Stipulations diverses</h2>
+      <h3>Indivisibilité</h3>
+      <p>Si l'une des stipulations des présentes CGU venait à être déclarée nulle ou inapplicable, les autres stipulations conserveraient leur pleine validité.</p>
+
+      <h3>Renonciation</h3>
+      <p>Le fait pour l'Éditeur de ne pas se prévaloir d'un manquement du Client ne saurait être interprété comme une renonciation à le faire ultérieurement.</p>
+
+      <h3>Loi applicable et juridiction</h3>
+      <p>Les présentes CGU sont régies par le <strong>droit français</strong>. Tout litige relèvera, après tentative de résolution amiable et de médiation, des <strong>tribunaux français</strong> compétents.</p>
+
+      <h2><span class="num">13.</span>Contact</h2>
+      <div class="contact-box">
+        <strong>📬 Pour toute question sur les CGU</strong>
+        <p style="margin: 8px 0;"><strong>Email :</strong> <a href="mailto:contact@myklyn.fr">contact@myklyn.fr</a></p>
+        <p style="margin: 8px 0; font-size: 13px;"><strong>Adresse postale :</strong><br>Ovise Noah — NovisEcom<br>6 Rue Mably, 18000 Bourges, France</p>
+      </div>
+    </section>
+
+    <div class="global-footer">
+      <p>Klyn — Documents légaux v1.0</p>
+      <p>En vigueur à compter du 5 juin 2026</p>
+      <p style="margin-top: 16px;">© 2026 Ovise Noah (NovisEcom) — Tous droits réservés</p>
     </div>
+
   </div>
+
 </body>
 </html>
